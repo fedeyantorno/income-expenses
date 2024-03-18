@@ -19,4 +19,3 @@ Conflictos a resolver:
 - Mejorar las funciones para hacerlas reutlizables, algunas están duplicadas.
 - IndexedDB no carga los ingresos ni los muestra si no se actualiza la página.
 - Al aplicar el Format Currency no se realizan los cálculos matemáticos.
-- Ver ramas en Git
