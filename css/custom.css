@@ -1,0 +1,65 @@
+body {
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  
+background: linear-gradient(to right, #004e92, #000428); 
+}
+header {
+    margin: 30px 0;
+}
+.content {
+    padding:20px;
+}
+.main-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.budget p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.budget p span {
+    font-weight: normal;
+}
+/* #expenses {
+    margin-bottom: 30px;
+} */
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color:#004e92;
+    font-size: 22px;
+    margin-bottom:30px;
+}
+
+.list-group-item {
+    font-size: 14px !important;
+}
+
+.container-view-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media  ( max-width: 820px ) {
+
+    .container-view-flex {
+        flex-direction: column;
+    }
+    
+}
+
+.full-width {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
