@@ -9,7 +9,7 @@ Nos muestra listado de ingresos, listado de egresos, totales de ambos y el saldo
 - Función Suma Ingresos: Realiza la suma de todos los ingresos que vayan surgiendo y lo muestra en Total - RESUELTO.
 - Función Suma Egresos: Realiza la suma de todos los egresos que vayan surgiendo y lo muestra en Total - RESUELTO.
 - Función Resta: Realiza la resta de los egresos a los ingresos y lo muestra en Restante - RESUELTO.
-- Función Comprobación de Restante: El color de fondo de RESTANTE debe cambiar según el porcentaje de saldo disponible ( 50% / 25% / 10% ) - PENDIENTE.
+- Función Comprobación de Restante: El color de fondo de RESTANTE debe cambiar según el porcentaje de saldo disponible ( 50% / 25% / 10% ) - RESUELTO.
 - Función Editar: Tanto los ingresos como egresos se deben poder editar a través de un BTN de Edición - PENDIENTE.
 - Función Eliminar: Tanto los ingresos como egresos se deben poder eliminar a través de un BTN de Eliminar - RESUELTO en Income, pero no impacta automáticamente en el front ni en la DB.
 - Se conectó a IndexedDB.
