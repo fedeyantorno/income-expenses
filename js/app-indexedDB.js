@@ -173,6 +173,23 @@ function addExpenses(e) {
 function getRemaining() {
 	const remaining = document.querySelector('#remaining');
 	const getRemaining = (renderTotalIncome() - renderTotalExpenses());
+
+	// Chequear Restante disponible y modificar color de fondo
+	const remainingDiv = document.querySelector('.remaining');
+
+	if (getRemaining < renderTotalIncome() * .25) {
+		remainingDiv.classList.remove('alert-success', 'alert-warning');
+		remainingDiv.classList.add('alert-danger');
+
+	} else if (getRemaining < renderTotalIncome() * .5) {
+		remainingDiv.classList.remove('alert-success', 'alert-danger');
+		remainingDiv.classList.add('alert-warning');
+
+	} else {
+		remainingDiv.classList.remove('alert-danger', 'alert-warning');
+		remainingDiv.classList.add('alert-success');
+	};
+
 	remaining.innerHTML = getRemaining;
 	return
 
@@ -370,7 +387,7 @@ function printAlert(message, type, block) {
 	}, 3000);
 };
 
-function deleteIncome (id) {
+function deleteIncome(id) {
 
 	// Eliminar el ingreso
 	const transaction = dataBaseIncome.transaction(['income'], 'readwrite');
@@ -388,6 +405,4 @@ function deleteIncome (id) {
 	// Refrescar ingresos
 	printDBIncome()
 
-	console.log(id)
-
-}
+};
